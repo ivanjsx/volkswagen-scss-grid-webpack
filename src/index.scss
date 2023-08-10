@@ -63,7 +63,7 @@
 
 .header {
   @include reset();
-  max-width: 1500px;
+  max-width: 1440px;
   width: 100%;
   min-height: 70px;
   box-sizing: border-box;
@@ -171,7 +171,7 @@
 
 .main {
   @include reset();
-  max-width: 1500px;
+  max-width: 1440px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -403,7 +403,7 @@
       padding: 20px;
       border-right: none;
       border-bottom: 1px solid #E1FD2C;  
-    }         
+    }        
   }
 
   &__cons {
@@ -707,7 +707,7 @@
 
 .footer {
   @include reset();
-  max-width: 1500px;
+  max-width: 1440px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
