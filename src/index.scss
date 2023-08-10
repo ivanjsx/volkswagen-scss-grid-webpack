@@ -19,7 +19,7 @@
   }
 }
 
-@mixin button() {
+@mixin button-primary() {
   transition: 
     background-color 0.2s,
     color 0.2s;
@@ -31,9 +31,9 @@
 }
 
 /* debugging */
-* {
-  border: 1px solid red;
-}
+// * {
+//   border: 1px solid red;
+// }
 
 .anchor {
   background-color: inherit;
@@ -300,7 +300,7 @@
     text-decoration: none;
     color: inherit;
   
-    @include button();
+    @include button-primary();
 
     @media (max-width: 1000px) {
       margin-top: 100px;
@@ -684,7 +684,7 @@
     text-decoration: none;
     color: inherit;
   
-    @include button();
+    @include button-primary();
 
     @media (max-width: 520px) {
       width: 88px;
