@@ -402,8 +402,11 @@
     @media (max-width: 520px) {
       padding: 20px;
       border-right: none;
-      border-bottom: 1px solid #E1FD2C;  
     }        
+    
+    @media (max-width: 400px) {
+      border-bottom: 1px solid #E1FD2C;  
+    }    
   }
 
   &__cons {
