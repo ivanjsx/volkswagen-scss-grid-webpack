@@ -35,4 +35,5 @@ How to set up a project on your local computer via Terminal window:
 ### Author
 
 Ivan Shanin
+
 You can always contant me via Telegram @ https://t.me/justicewisdom/
