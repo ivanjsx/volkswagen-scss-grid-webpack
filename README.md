@@ -12,7 +12,7 @@ Created using OOP principles, making it easy to add server-side functionality la
 
 The input data for the page is a design project in [**Figma**](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?type=design&node-id=2-1369&mode=dev).
 
-## Output
+### Output
 
 How to set up a project on your local computer via Terminal window:
 
@@ -21,9 +21,10 @@ How to set up a project on your local computer via Terminal window:
 2. Navigate to the newly created project folder with `cd vw_t1_electro` command
 3. Install packages indicated in the dependencies list using `npm install` command
 8. Run your own local web server by executing `npm run dev` command
-9. **Profit!** Manually type `localhost:8080` in your browser of choice
+9. **Profit!** Manually type `localhost:8080` in your browser of choice to see the page.
 
 ### Technologies
+
 - HTML5
 - CSS3 & [SCSS](https://sass-lang.com)
 - JavaScript
@@ -32,5 +33,6 @@ How to set up a project on your local computer via Terminal window:
 - Flexbox, Grid Layout, media-queries, Object-Oriented Programming
 
 ### Author
+
 Ivan Shanin
-https://t.me/justicewisdom/
+You can always contant me via Telegram @ https://t.me/justicewisdom/
