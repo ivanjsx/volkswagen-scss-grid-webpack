@@ -57,13 +57,13 @@
 
   color: #E1FD2C;
   background-color: #191D2C;
-  font-family: "Source Sans 3";
+  font-family: "Source Sans 3", sans-serif;
   font-style: normal;
 }
 
 .header {
   @include reset();
-  max-width: 1500px;
+  max-width: 1440px;
   width: 100%;
   min-height: 70px;
   box-sizing: border-box;
@@ -171,7 +171,7 @@
 
 .main {
   @include reset();
-  max-width: 1500px;
+  max-width: 1440px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -372,21 +372,26 @@
     }          
   }
 
-  &__summary-text {
+  @mixin summary-text() {
     @include reset();
     font-size: 30px;
-    font-weight: 300;
     line-height: 42px;
 
     @media (max-width: 520px) {
       font-size: 16px;
       line-height: 27px;
-    }
-
-    &_bold {
-      font-weight: 400;
-    }
+    }    
   }
+
+  &__summary-text {
+    @include summary-text();
+    font-weight: 300;
+  }
+
+  &__summary-text-bold {
+    @include summary-text();
+    font-weight: 400;
+  }  
 
   &__pros {
     grid-area: pros;
@@ -402,8 +407,11 @@
     @media (max-width: 520px) {
       padding: 20px;
       border-right: none;
+    }        
+    
+    @media (max-width: 400px) {
       border-bottom: 1px solid #E1FD2C;  
-    }         
+    }    
   }
 
   &__cons {
@@ -707,7 +715,7 @@
 
 .footer {
   @include reset();
-  max-width: 1500px;
+  max-width: 1440px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
