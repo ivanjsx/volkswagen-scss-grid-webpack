@@ -76,3 +76,39 @@ articlesObjectList.forEach(
         article.generate();
     }
 );
+
+
+
+// subscription form submission
+
+import Form from './components/Form';
+
+// might as well send form data to an API endpoint
+function subscriptionFormSubmitHandler(event) {
+    return new Promise(
+        (resolve, reject) => {
+            setTimeout(
+                () => {
+                    if (Math.random() < 0.5) {
+                        resolve();
+                    } else {
+                        reject();
+                    };
+                }, 
+                1000
+            );
+        }
+    );
+};
+
+const subscriptionFormSettings = {
+    name: "subscription",
+    submitButtonSelector: ".footer__submit", 
+    submitHandler: subscriptionFormSubmitHandler
+};
+
+const form = new Form(subscriptionFormSettings);
+form.setProcessingText("отправляем...");
+form.setSuccessText("готово!");
+form.setErrorText("ошибка :(");
+form.setEventListeners();
