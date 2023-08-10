@@ -1,41 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VW T1 Electro</title>
 </head>
+
 <body class="page">
 
-  <header class="header header_desktop">
+  <header class="header">
     <nav class="header__nav">
       <ul class="header__links">
-        <li class="header__link">Факты</li>
-        <li class="header__link">Галерея</li>
-        <li class="header__link">Пресса</li>
+        <li class="header__link">
+          <a class="anchor" href="#facts">факты</a>
+        </li>
+        <li class="header__link">
+          <a class="anchor" href="#gallery">галерея</a>
+        </li>
+        <li class="header__link">
+          <a class="anchor" href="#press">пресса</a>
+        </li>
       </ul>
     </nav>
-    <img class="header__logo" src="<%=require('../images/logo.svg')%>" alt="">
-  </header>
-
-  <header class="header header_mobile">
-    <div class="header__layer header__layer_top">
-      <img class="header__logo" src="<%=require('../images/logo.svg')%>" alt="">
-      <button class="header__switcher header__switcher_reveal" type="button"></button>
+    <div class="header__logo-area">
+      <img class="header__logo-icon" src="<%=require('../images/logo.svg')%>" alt="логотип auto magazine">
     </div>
-    <div class="header__layer header__layer_bottom">
-      <nav class="header__nav">
-        <ul class="header__links">
-          <li class="header__link">Факты</li>
-          <li class="header__link">Галерея</li>
-          <li class="header__link">Пресса</li>
-        </ul>
-      </nav>      
-      <button class="header__switcher header__switcher_hide" type="button"></button>
-    </div>    
+    <div class="header__switcher-area">
+      <button class="header__switcher-button header__switcher-button_reveal" type="button"></button>
+    </div>
   </header>
 
-  <main class="content"></main>
-  <footer class="footer"></footer>
+  <main class="main">
+    <section class="lead">
+      <div class="lead__description">
+        <p class="lead__text lead__text_intro">volkswagen t1</p>
+        <h1 class="lead__title">Новая версия популярного микроавтобуса</h1>
+        <p class="lead__text lead__text_outro">с электро двигателем</p>
+      </div>
+      <div class="lead__picture-area">
+        <img class="lead__picture" src="<%=require('../images/front_view.png')%>" alt="">
+      </div>
+      <a class="lead__read-more-button" href="#facts">
+        <p class="lead__read-more-text">подробнее</p>
+      </a>      
+    </section>
+
+    <section class="facts" id="facts">
+      <div class="facts__summary">
+        <p class="facts__summary-text">
+          <span class="facts__summary-text facts__summary-text_bold">VW T1 Electro:</span>
+          Отделение Volkswagen Commercial Vehicles представило концепт e&#8209;Bulli:
+          классический вэн T1 1966 года с электрической силовой установкой.
+          По словам производителя, проект получит коммерческое продолжение,
+          и через фирму-партнера eClassics наборы для конверсии микроавтобусов в электрокары
+          и уже готовые машины будут продавать частным клиентам.
+        </p>
+      </div>
+      <div class="facts__pros">
+        <h2 class="facts__title">плюсы</h2>
+        <ul class="facts__list">
+          <li class="facts__fact">+ Экологичный</li>
+          <li class="facts__fact">+ Экономный</li>
+          <li class="facts__fact">+ Тихий</li>
+        </ul>
+      </div>
+      <div class="facts__cons">
+        <h2 class="facts__title">минусы</h2>
+        <ul class="facts__list">
+          <li class="facts__fact">- Дорогой</li>
+          <li class="facts__fact">- Подзарядка</li>
+        </ul>        
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="gallery__picture-area">
+        <img class="gallery__picture" alt="">
+      </div>
+      <div class="gallery__section-footer">
+        <h2 class="gallery__section-title">галерея</h2>
+        <div class="gallery__switcher-area">
+          <button class="gallery__switcher-button gallery__switcher-button_previous" type="button"></button>
+          <button class="gallery__switcher-button gallery__switcher-button_next" type="button"></button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="press" id="press">
+      <div class="press__section-title-area">
+        <h2 class="press__section-title">пресса</h2>
+      </div>
+      <div class="press__article-area">
+        <p class="press__article-title">
+          <span class="press__article-magazine"></span>
+        </p>
+        <div class="press__switcher-area">
+          <template id="press__switcher-button">
+            <button class="press__switcher-button" type="button"></button>
+          </template>
+        </div>
+        <div class="press__link-area">
+          <a class="press__link" target="_blank" href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html">
+            <p class="press__link-text">читать</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__subscription">
+      <h2 class="footer__subscription-title">подписка</h2>
+      <p class="footer__subscription-text">На новые спецвыпуски машин.</p>
+      <form action="" class="footer__form" name="subscription">
+        <input class="footer__input footer__input_first-name" type="text" name="first-name" placeholder="имя" required>
+        <input class="footer__input footer__input_last-name" type="text" name="last-name" placeholder="фамилия">
+        <input class="footer__input footer__input_email" type="email" name="email" placeholder="почта" required>
+        <button class="footer__submit" type="submit">подписка</button>
+      </form>
+    </div>
+    <div class="footer__info">
+      <img class="footer__logo" src="<%=require('../images/logo.svg')%>" alt="логотип auto magazine">
+      <p class="footer__copyright">
+        &copy; Auto-Magazine 2021
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
