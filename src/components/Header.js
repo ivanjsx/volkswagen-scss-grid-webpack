@@ -13,15 +13,15 @@ export default class Header {
     };
 
     _revealNavigation() {
-        this._headerSwitcher.classList.remove(`${this._headerSwitcherClass}_reveal`);
-        this._headerSwitcher.classList.add(`${this._headerSwitcherClass}_hide`);
+        this._headerSwitcher.classList.remove(`${this._headerSwitcherClass}_state_reveal`);
+        this._headerSwitcher.classList.add(`${this._headerSwitcherClass}_state_hide`);
         this._headerLogoArea.style.display = "none";
         this._headerNavigation.style.display = "flex";     
     };
 
     _hideNavigation() {
-        this._headerSwitcher.classList.remove(`${this._headerSwitcherClass}_hide`);
-        this._headerSwitcher.classList.add(`${this._headerSwitcherClass}_reveal`);
+        this._headerSwitcher.classList.remove(`${this._headerSwitcherClass}_state_hide`);
+        this._headerSwitcher.classList.add(`${this._headerSwitcherClass}_state_reveal`);
         this._headerLogoArea.style.display = "flex";
         this._headerNavigation.style.display = "none";  
     };
@@ -29,7 +29,7 @@ export default class Header {
     _toggleMenu() {
         if (
             this._headerSwitcher.classList.contains(
-                `${this._headerSwitcherClass}_reveal`
+                `${this._headerSwitcherClass}_state_reveal`
             )
         ) {
             this._revealNavigation();

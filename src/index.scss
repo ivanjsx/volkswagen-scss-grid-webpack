@@ -153,18 +153,20 @@
       height: 16px;      
     }    
 
-    &_reveal {
-      background-image: url(../images/switcher_reveal.svg);
-      background-size: contain;
-    }
-
-    &_hide {
-      background-image: url(../images/switcher_hide.svg);
-      background-size: 42px;
-
-      @media (max-width: 520px) {
-        background-size: 30px;    
-      }          
+    &_state {
+      &_reveal {
+        background-image: url(../images/switcher_reveal.svg);
+        background-size: contain;
+      }
+  
+      &_hide {
+        background-image: url(../images/switcher_hide.svg);
+        background-size: 42px;
+  
+        @media (max-width: 520px) {
+          background-size: 30px;    
+        }          
+      }
     }
   }
 }
@@ -228,29 +230,31 @@
       line-height: 14px;    
     }
 
-    &_intro {
-      padding: 30px 0;
-
-      @media (max-width: 1000px) {
-        padding-top: 0;
-      }       
-
-      @media (max-width: 520px) {
-        padding-bottom: 25px;
-      }          
-    }
-
-    &_outro {
-      padding: 50px 0 60px 0;
-
-      @media (max-width: 1000px) {
-        padding-bottom: 100px;
-      }         
-      
-      @media (max-width: 520px) {
-        padding-top: 30px;
-        padding-bottom: 60px;
-      }          
+    &_belonging {
+      &_intro {
+        padding: 30px 0;
+  
+        @media (max-width: 1000px) {
+          padding-top: 0;
+        }       
+  
+        @media (max-width: 520px) {
+          padding-bottom: 25px;
+        }          
+      }
+  
+      &_outro {
+        padding: 50px 0 60px 0;
+  
+        @media (max-width: 1000px) {
+          padding-bottom: 100px;
+        }         
+        
+        @media (max-width: 520px) {
+          padding-top: 30px;
+          padding-bottom: 60px;
+        }          
+      }
     }
   }
 
@@ -564,9 +568,12 @@
       opacity: 0.6;
     }
 
-    &_next {
-      transform: rotate(180deg);
+    &_direction {
+      &_next {
+        transform: rotate(180deg);
+      }
     }
+
   }
 }
 
@@ -802,21 +809,23 @@
       color: inherit;
     }    
    
-    &_first-name {
-      grid-area: first-name;
-      border-right: 1px solid #E1FD2C;      
-      border-bottom: 1px solid #E1FD2C;      
+    &_data {
+      &_first-name {
+        grid-area: first-name;
+        border-right: 1px solid #E1FD2C;      
+        border-bottom: 1px solid #E1FD2C;      
+      }
+  
+      &_last-name {
+        grid-area: last-name;
+        border-bottom: 1px solid #E1FD2C;      
+      }
+  
+      &_email {
+        grid-area: email;
+        border-right: 1px solid #E1FD2C;      
+      }        
     }
-
-    &_last-name {
-      grid-area: last-name;
-      border-bottom: 1px solid #E1FD2C;      
-    }
-
-    &_email {
-      grid-area: email;
-      border-right: 1px solid #E1FD2C;      
-    }        
   }
 
   &__submit {
