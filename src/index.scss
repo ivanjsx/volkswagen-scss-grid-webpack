@@ -815,6 +815,7 @@
 
     &_email {
       grid-area: email;
+      border-right: 1px solid #E1FD2C;      
     }        
   }
 
@@ -831,6 +832,11 @@
     line-height: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.6;
+    }    
   }
 
   &__info {
