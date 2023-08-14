@@ -6,19 +6,6 @@
   padding: 0;  
 }
 
-@mixin section-title() {
-  @include reset();
-  font-size: 46px;
-  font-weight: 400;
-  line-height: 46px;
-  text-transform: capitalize;
-
-  @media (max-width: 520px) {
-    font-size: 26px;
-    line-height: 26px;    
-  }
-}
-
 @mixin button-primary() {
   transition: 
     background-color 0.2s,
@@ -44,6 +31,21 @@
 
   &:hover {
     opacity: 0.6;
+  }
+}
+
+.section {
+  &__title {
+    @include reset();
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 46px;
+    text-transform: capitalize;
+  
+    @media (max-width: 520px) {
+      font-size: 26px;
+      line-height: 26px;    
+    }    
   }
 }
 
@@ -534,10 +536,6 @@
     }         
   }
 
-  &__section-title {
-    @include section-title();
-  }
-
   &__switcher-area {
     display: flex;
     gap: 30px;
@@ -609,10 +607,6 @@
     @media (max-width: 1000px) {
       display: none;
     }            
-  }
-
-  &__section-title {
-    @include section-title();
   }
 
   &__article-area {
@@ -754,10 +748,6 @@
       border: none;
       padding: 20px;
     }                
-  }
-
-  &__subscription-title {
-    @include section-title();       
   }
 
   &__subscription-text {
