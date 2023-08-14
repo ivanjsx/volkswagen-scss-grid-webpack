@@ -515,7 +515,7 @@
     box-sizing: border-box;
     border-right: 1px solid #E1FD2C;        
     padding: 0 50px;
-    height: 146px;
+    min-height: 146px;
     display: flex;
     align-items: center;
     justify-content: space-between;
