@@ -184,6 +184,7 @@
   
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(min-content, 445px) min-content;  
   grid-template-areas:
     "description picture"
     "read-more-button picture";
@@ -191,10 +192,11 @@
   @media (max-width: 1000px) {
     padding: 100px 35px;
     grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas:
       "description"
       "picture"
-      "read-more-button";      
+      "read-more-button";          
   }  
 
   @media (max-width: 520px) {
@@ -292,7 +294,9 @@
     width: 50%;
     height: 64px;
     margin: 0 auto;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     border: 1px solid #E1FD2C;
 
@@ -765,6 +769,7 @@
 
   &__form {
     margin-top: 64px;
+    max-width: 340px;    
     box-sizing: border-box;
     border: 1px solid #E1FD2C;
 
