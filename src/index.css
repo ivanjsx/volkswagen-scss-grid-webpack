@@ -1,0 +1,140 @@
+/* vendor styles */
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+
+
+/* common rulesets */
+@import url(../blocks/anchor/anchor.css);
+@import url(../blocks/section/__title/section__title.css);
+@import url(../blocks/page/page.css);
+
+
+
+/* block */
+@import url(../blocks/header/header.css);
+
+/* block modifiers */
+
+/* block elements */
+@import url(../blocks/header/__nav/header__nav.css);
+@import url(../blocks/header/__links/header__links.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__logo-area/header__logo-area.css);
+@import url(../blocks/header/__logo-icon/header__logo-icon.css);
+@import url(../blocks/header/__switcher-area/header__switcher-area.css);
+@import url(../blocks/header/__switcher-button/header__switcher-button.css);
+
+/* block elements modifiers */
+@import url(../blocks/header/__switcher-button/_state/header__switcher-button_state_reveal.css);
+@import url(../blocks/header/__switcher-button/_state/header__switcher-button_state_hide.css);
+
+
+
+/* block */
+@import url(../blocks/main/main.css);
+
+/* block modifiers */
+
+/* block elements */
+
+/* block elements modifiers */
+
+
+
+/* block */
+@import url(../blocks/lead/lead.css);
+
+/* block modifiers */
+
+/* block elements */
+@import url(../blocks/lead/__description/lead__description.css);
+@import url(../blocks/lead/__text/lead__text.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__picture-area/lead__picture-area.css);
+@import url(../blocks/lead/__picture/lead__picture.css);
+@import url(../blocks/lead/__read-more-button/lead__read-more-button.css);
+@import url(../blocks/lead/__read-more-text/lead__read-more-text.css);
+
+/* block elements modifiers */
+@import url(../blocks/lead/__text/_belonging/lead__text_belonging_intro.css);
+@import url(../blocks/lead/__text/_belonging/lead__text_belonging_outro.css);
+
+
+
+/* block */
+@import url(../blocks/facts/facts.css);
+
+/* block modifiers */
+
+/* block elements */
+@import url(../blocks/facts/__summary/facts__summary.css);
+@import url(../blocks/facts/__summary-text/facts__summary-text.css);
+@import url(../blocks/facts/__summary-text-bold/facts__summary-text-bold.css);
+@import url(../blocks/facts/__pros/facts__pros.css);
+@import url(../blocks/facts/__cons/facts__cons.css);
+@import url(../blocks/facts/__title/facts__title.css);
+@import url(../blocks/facts/__list/facts__list.css);
+@import url(../blocks/facts/__fact/facts__fact.css);
+
+/* block elements modifiers */
+
+
+
+/* block */
+@import url(../blocks/gallery/gallery.css);
+
+/* block modifiers */
+
+/* block elements */
+@import url(../blocks/gallery/__picture-area/gallery__picture-area.css);
+@import url(../blocks/gallery/__picture/gallery__picture.css);
+@import url(../blocks/gallery/__section-footer/gallery__section-footer.css);
+@import url(../blocks/gallery/__switcher-area/gallery__switcher-area.css);
+@import url(../blocks/gallery/__switcher-button/gallery__switcher-button.css);
+
+/* block elements modifiers */
+@import url(../blocks/gallery/__switcher-button/_direction/gallery__switcher-button_direction_next.css);
+
+
+
+/* block */
+@import url(../blocks/press/press.css);
+
+/* block modifiers */
+
+/* block elements */
+@import url(../blocks/press/__section-title-area/press__section-title-area.css);
+@import url(../blocks/press/__article-area/press__article-area.css);
+@import url(../blocks/press/__article-title/press__article-title.css);
+@import url(../blocks/press/__article-magazine/press__article-magazine.css);
+@import url(../blocks/press/__switcher-area/press__switcher-area.css);
+@import url(../blocks/press/__switcher-button/press__switcher-button.css);
+@import url(../blocks/press/__link-area/press__link-area.css);
+@import url(../blocks/press/__link/press__link.css);
+@import url(../blocks/press/__link-text/press__link-text.css);
+
+/* block elements modifiers */
+@import url(../blocks/press/__switcher-button/_active/press__switcher-button_active.css);
+
+
+
+/* block */
+@import url(../blocks/footer/footer.css);
+
+/* block modifiers */
+
+/* block elements */
+@import url(../blocks/footer/__subscription/footer__subscription.css);
+@import url(../blocks/footer/__subscription-text/footer__subscription-text.css);
+@import url(../blocks/footer/__form/footer__form.css);
+@import url(../blocks/footer/__input/footer__input.css);
+@import url(../blocks/footer/__submit/footer__submit.css);
+@import url(../blocks/footer/__info/footer__info.css);
+@import url(../blocks/footer/__logo/footer__logo.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+/* block elements modifiers */
+@import url(../blocks/footer/__input/_data/footer__input_data_first-name.css);
+@import url(../blocks/footer/__input/_data/footer__input_data_last-name.css);
+@import url(../blocks/footer/__input/_data/footer__input_data_email.css);
