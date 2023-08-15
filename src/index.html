@@ -86,6 +86,7 @@
       <div class="gallery__picture-area">
         <img 
           class="gallery__picture" 
+          src="<%=require('../images/rear_view.png')%>"
           alt="некоторые фото интерьера и экстерьера VW T1 Electro"
         >
       </div>
@@ -125,7 +126,7 @@
     <div class="footer__subscription">
       <h3 class="section__title">подписка</h3>
       <p class="footer__subscription-text">На новые спецвыпуски машин.</p>
-      <form action="" class="footer__form" name="subscription">
+      <form action="/" class="footer__form" name="subscription" method="post">
         <input class="footer__input footer__input_data_first-name" type="text" name="first-name" placeholder="имя" required>
         <input class="footer__input footer__input_data_last-name" type="text" name="last-name" placeholder="фамилия">
         <input class="footer__input footer__input_data_email" type="email" name="email" placeholder="почта" required>
