@@ -1,0 +1,30 @@
+.facts {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 2fr repeat(2, minmax(max-content, 1fr));
+  grid-template-rows: min-content;
+  grid-template-areas: "summary pros cons";
+  box-sizing: border-box;
+  border-top: 1px solid #E1FD2C;
+  border-bottom: 1px solid #E1FD2C;
+}
+@media (max-width: 1000px) {
+    .facts {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: min-content minmax(506px, auto);
+        grid-template-areas: "summary summary" "pros cons";
+      }
+}
+@media (max-width: 520px) {
+    .facts {
+        grid-template-rows: repeat(2, min-content);
+      }
+}
+@media (max-width: 400px) {
+    .facts {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, min-content);
+        grid-template-areas: "summary" "pros" "cons";
+      }
+}

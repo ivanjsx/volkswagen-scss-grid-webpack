@@ -1,0 +1,12 @@
+.footer__copyright {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 1px;
+}
+@media (max-width: 520px) {
+    .footer__copyright {
+        padding-left: 12px;
+      }
+}

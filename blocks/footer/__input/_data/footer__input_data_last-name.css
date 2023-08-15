@@ -1,0 +1,4 @@
+.footer__input_data_last-name {
+  grid-area: last-name;
+  border-bottom: 1px solid #E1FD2C;
+}

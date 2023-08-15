@@ -1,0 +1,17 @@
+.header__nav {
+  grid-area: nav;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+    .header__nav {
+        display: none;
+        padding: 0 35px;
+      }
+}
+@media (max-width: 520px) {
+    .header__nav {
+        padding: 0 20px;
+      }
+}

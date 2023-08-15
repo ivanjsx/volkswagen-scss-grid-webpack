@@ -1,0 +1,14 @@
+.press__article-title {
+  grid-area: title;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 300;
+}
+@media (max-width: 520px) {
+    .press__article-title {
+        font-size: 16px;
+        line-height: 27px;
+      }
+}

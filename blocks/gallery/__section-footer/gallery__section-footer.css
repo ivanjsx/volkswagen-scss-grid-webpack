@@ -1,0 +1,21 @@
+.gallery__section-footer {
+  grid-area: section-footer;
+  box-sizing: border-box;
+  border-right: 1px solid #E1FD2C;
+  padding: 0 50px;
+  min-height: 146px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+    .gallery__section-footer {
+        border: none;
+      }
+}
+@media (max-width: 520px) {
+    .gallery__section-footer {
+        height: 66px;
+        padding: 0 20px;
+      }
+}

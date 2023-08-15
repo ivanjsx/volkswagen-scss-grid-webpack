@@ -1,0 +1,13 @@
+.press__article-area {
+  grid-area: article-area;
+  padding: 50px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "title title" "switcher-area link-area";
+}
+@media (max-width: 520px) {
+    .press__article-area {
+        padding: 20px;
+      }
+}

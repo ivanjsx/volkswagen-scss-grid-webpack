@@ -1,0 +1,15 @@
+.footer {
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "subscription info";
+}
+@media (max-width: 520px) {
+    .footer {
+        grid-template-columns: auto;
+        grid-template-areas: "subscription" "info";
+      }
+}

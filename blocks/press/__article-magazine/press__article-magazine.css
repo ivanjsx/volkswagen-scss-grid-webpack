@@ -1,0 +1,13 @@
+.press__article-magazine {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 400;
+}
+@media (max-width: 520px) {
+    .press__article-magazine {
+        font-size: 16px;
+        line-height: 27px;
+      }
+}
