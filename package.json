@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack serve"
+    "compile": "sass styles/index.scss styles/index.css && rm styles/index.css.map",
+    "bemify": "node_modules/.bin/bemify styles/index.css",
+    "prepare": "npm run compile && npm run bemify",
+    "dev": "webpack serve",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "Ivan Shanin",
