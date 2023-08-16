@@ -73,11 +73,14 @@
   &__nav {
     grid-area: nav;
     padding: 0 50px;
-    display: flex;
+    display: none;
     align-items: center;
+    
+    &_visible {
+      display: flex;
+    }
 
     @media (max-width: 1000px) {
-      display: none;
       padding: 0 35px;
     }      
 
@@ -103,9 +106,13 @@
 
   &__logo-area {
     grid-area: logo-area;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;    
+
+    &_visible {
+      display: flex;
+    }
   }
 
   &__logo-icon {
@@ -127,7 +134,7 @@
     align-items: center;
     justify-content: flex-end;  
     
-    @media (max-width: 1000px) {
+    &_visible {
       display: flex;
     }      
 

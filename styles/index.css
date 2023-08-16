@@ -51,12 +51,14 @@
 .header__nav {
   grid-area: nav;
   padding: 0 50px;
-  display: flex;
+  display: none;
   align-items: center;
+}
+.header__nav_visible {
+  display: flex;
 }
 @media (max-width: 1000px) {
   .header__nav {
-    display: none;
     padding: 0 35px;
   }
 }
@@ -81,9 +83,12 @@
 }
 .header__logo-area {
   grid-area: logo-area;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
+}
+.header__logo-area_visible {
+  display: flex;
 }
 .header__logo-icon {
   width: 184px;
@@ -104,10 +109,8 @@
   align-items: center;
   justify-content: flex-end;
 }
-@media (max-width: 1000px) {
-  .header__switcher-area {
-    display: flex;
-  }
+.header__switcher-area_visible {
+  display: flex;
 }
 @media (max-width: 520px) {
   .header__switcher-area {

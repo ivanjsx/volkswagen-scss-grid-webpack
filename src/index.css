@@ -26,6 +26,9 @@
 @import url(../blocks/header/__switcher-button/header__switcher-button.css);
 
 /* block elements modifiers */
+@import url(../blocks/header/__nav/_visible/header__nav_visible.css);
+@import url(../blocks/header/__logo-area/_visible/header__logo-area_visible.css);
+@import url(../blocks/header/__switcher-area/_visible/header__switcher-area_visible.css);
 @import url(../blocks/header/__switcher-button/_state/header__switcher-button_state_reveal.css);
 @import url(../blocks/header/__switcher-button/_state/header__switcher-button_state_hide.css);
 

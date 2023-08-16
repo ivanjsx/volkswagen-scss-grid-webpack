@@ -5,11 +5,6 @@
   align-items: center;
   justify-content: flex-end;
 }
-@media (max-width: 1000px) {
-    .header__switcher-area {
-        display: flex;
-      }
-}
 @media (max-width: 520px) {
     .header__switcher-area {
         padding: 0 20px;

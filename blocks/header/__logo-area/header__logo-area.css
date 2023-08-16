@@ -1,6 +1,6 @@
 .header__logo-area {
   grid-area: logo-area;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
