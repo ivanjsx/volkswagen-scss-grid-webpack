@@ -1,0 +1,16 @@
+.header__switcher-button {
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 520px) {
+    .header__switcher-button {
+        width: 20px;
+        height: 16px;
+      }
+}

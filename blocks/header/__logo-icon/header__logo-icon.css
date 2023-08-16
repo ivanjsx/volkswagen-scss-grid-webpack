@@ -1,0 +1,12 @@
+.header__logo-icon {
+  width: 184px;
+  height: 38px;
+  object-fit: contain;
+  object-position: center;
+}
+@media (max-width: 520px) {
+    .header__logo-icon {
+        width: 100px;
+        height: 20px;
+      }
+}

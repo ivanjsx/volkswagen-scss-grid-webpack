@@ -1,0 +1,23 @@
+.gallery__picture-area {
+  grid-area: picture-area;
+  box-sizing: content-box;
+  max-height: 540px;
+  border-right: 1px solid #E1FD2C;
+}
+@media (max-width: 1000px) {
+    .gallery__picture-area {
+        padding: 35px 35px 0 35px;
+        max-height: 510px;
+        border: none;
+      }
+}
+@media (max-width: 520px) {
+    .gallery__picture-area {
+        padding: 20px 20px 30px 20px;
+      }
+}
+@media (max-width: 400px) {
+    .gallery__picture-area {
+        max-height: 205px;
+      }
+}

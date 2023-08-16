@@ -1,0 +1,14 @@
+.lead__picture-area {
+  grid-area: picture;
+  max-height: 540px;
+}
+@media (max-width: 1000px) {
+    .lead__picture-area {
+        max-height: 510px;
+      }
+}
+@media (max-width: 400px) {
+    .lead__picture-area {
+        max-height: 200px;
+      }
+}

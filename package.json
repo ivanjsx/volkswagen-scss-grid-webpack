@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack serve"
+    "compile": "sass styles/index.scss styles/index.css && rm styles/index.css.map",
+    "bemify": "node_modules/.bin/bemify styles/index.css",
+    "prepare": "npm run compile && npm run bemify",
+    "dev": "webpack serve",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "Ivan Shanin",
@@ -17,6 +20,7 @@
     "babel-loader": "^9.1.3",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.8.1",
+    "css-to-bem-file-structure": "^0.0.5",
     "cssnano": "^6.0.1",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",

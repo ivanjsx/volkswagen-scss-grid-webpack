@@ -1,0 +1,6 @@
+.press__switcher-area {
+  grid-area: switcher-area;
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+}

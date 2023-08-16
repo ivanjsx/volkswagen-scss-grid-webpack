@@ -1,0 +1,4 @@
+.footer__input_data_email {
+  grid-area: email;
+  border-right: 1px solid #E1FD2C;
+}

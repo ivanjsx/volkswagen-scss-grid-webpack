@@ -1,0 +1,9 @@
+.header__switcher-button_state_hide {
+  background-image: url(../../../../images/switcher_hide.svg);
+  background-size: 42px;
+}
+@media (max-width: 520px) {
+    .header__switcher-button_state_hide {
+        background-size: 30px;
+      }
+}

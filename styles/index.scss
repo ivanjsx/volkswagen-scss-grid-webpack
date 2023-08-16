@@ -1,22 +1,6 @@
-@use "../vendor/normalize.css";
-@use "../vendor/fonts.css";
-
 @mixin reset() {
   margin: 0;
   padding: 0;  
-}
-
-@mixin section-title() {
-  @include reset();
-  font-size: 46px;
-  font-weight: 400;
-  line-height: 46px;
-  text-transform: capitalize;
-
-  @media (max-width: 520px) {
-    font-size: 26px;
-    line-height: 26px;    
-  }
 }
 
 @mixin button-primary() {
@@ -30,7 +14,6 @@
   }      
 }
 
-/* debugging */
 // * {
 //   border: 1px solid red;
 // }
@@ -44,6 +27,21 @@
 
   &:hover {
     opacity: 0.6;
+  }
+}
+
+.section {
+  &__title {
+    @include reset();
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 46px;
+    text-transform: capitalize;
+  
+    @media (max-width: 520px) {
+      font-size: 26px;
+      line-height: 26px;    
+    }    
   }
 }
 
@@ -75,11 +73,14 @@
   &__nav {
     grid-area: nav;
     padding: 0 50px;
-    display: flex;
+    display: none;
     align-items: center;
+    
+    &_visible {
+      display: flex;
+    }
 
     @media (max-width: 1000px) {
-      display: none;
       padding: 0 35px;
     }      
 
@@ -105,9 +106,13 @@
 
   &__logo-area {
     grid-area: logo-area;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;    
+
+    &_visible {
+      display: flex;
+    }
   }
 
   &__logo-icon {
@@ -129,7 +134,7 @@
     align-items: center;
     justify-content: flex-end;  
     
-    @media (max-width: 1000px) {
+    &_visible {
       display: flex;
     }      
 
@@ -153,18 +158,20 @@
       height: 16px;      
     }    
 
-    &_reveal {
-      background-image: url(../images/switcher_reveal.svg);
-      background-size: contain;
-    }
-
-    &_hide {
-      background-image: url(../images/switcher_hide.svg);
-      background-size: 42px;
-
-      @media (max-width: 520px) {
-        background-size: 30px;    
-      }          
+    &_state {
+      &_reveal {
+        background-image: url(../images/switcher_reveal.svg);
+        background-size: contain;
+      }
+  
+      &_hide {
+        background-image: url(../images/switcher_hide.svg);
+        background-size: 42px;
+  
+        @media (max-width: 520px) {
+          background-size: 30px;    
+        }          
+      }
     }
   }
 }
@@ -184,6 +191,7 @@
   
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(min-content, 445px) min-content;  
   grid-template-areas:
     "description picture"
     "read-more-button picture";
@@ -191,10 +199,11 @@
   @media (max-width: 1000px) {
     padding: 100px 35px;
     grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas:
       "description"
       "picture"
-      "read-more-button";      
+      "read-more-button";          
   }  
 
   @media (max-width: 520px) {
@@ -226,29 +235,31 @@
       line-height: 14px;    
     }
 
-    &_intro {
-      padding: 30px 0;
-
-      @media (max-width: 1000px) {
-        padding-top: 0;
-      }       
-
-      @media (max-width: 520px) {
-        padding-bottom: 25px;
-      }          
-    }
-
-    &_outro {
-      padding: 50px 0 60px 0;
-
-      @media (max-width: 1000px) {
-        padding-bottom: 100px;
-      }         
-      
-      @media (max-width: 520px) {
-        padding-top: 30px;
-        padding-bottom: 60px;
-      }          
+    &_belonging {
+      &_intro {
+        padding: 30px 0;
+  
+        @media (max-width: 1000px) {
+          padding-top: 0;
+        }       
+  
+        @media (max-width: 520px) {
+          padding-bottom: 25px;
+        }          
+      }
+  
+      &_outro {
+        padding: 50px 0 60px 0;
+  
+        @media (max-width: 1000px) {
+          padding-bottom: 100px;
+        }         
+        
+        @media (max-width: 520px) {
+          padding-top: 30px;
+          padding-bottom: 60px;
+        }          
+      }
     }
   }
 
@@ -292,7 +303,9 @@
     width: 50%;
     height: 64px;
     margin: 0 auto;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     border: 1px solid #E1FD2C;
 
@@ -511,7 +524,7 @@
     box-sizing: border-box;
     border-right: 1px solid #E1FD2C;        
     padding: 0 50px;
-    height: 146px;
+    min-height: 146px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -524,10 +537,6 @@
       height: 66px;
       padding: 0 20px;
     }         
-  }
-
-  &__section-title {
-    @include section-title();
   }
 
   &__switcher-area {
@@ -560,9 +569,12 @@
       opacity: 0.6;
     }
 
-    &_next {
-      transform: rotate(180deg);
+    &_direction {
+      &_next {
+        transform: rotate(180deg);
+      }
     }
+
   }
 }
 
@@ -598,10 +610,6 @@
     @media (max-width: 1000px) {
       display: none;
     }            
-  }
-
-  &__section-title {
-    @include section-title();
   }
 
   &__article-area {
@@ -745,10 +753,6 @@
     }                
   }
 
-  &__subscription-title {
-    @include section-title();       
-  }
-
   &__subscription-text {
     margin: 16px 0 0 0;
     padding: 0;
@@ -765,6 +769,7 @@
 
   &__form {
     margin-top: 64px;
+    max-width: 340px;    
     box-sizing: border-box;
     border: 1px solid #E1FD2C;
 
@@ -797,20 +802,23 @@
       color: inherit;
     }    
    
-    &_first-name {
-      grid-area: first-name;
-      border-right: 1px solid #E1FD2C;      
-      border-bottom: 1px solid #E1FD2C;      
+    &_data {
+      &_first-name {
+        grid-area: first-name;
+        border-right: 1px solid #E1FD2C;      
+        border-bottom: 1px solid #E1FD2C;      
+      }
+  
+      &_last-name {
+        grid-area: last-name;
+        border-bottom: 1px solid #E1FD2C;      
+      }
+  
+      &_email {
+        grid-area: email;
+        border-right: 1px solid #E1FD2C;      
+      }        
     }
-
-    &_last-name {
-      grid-area: last-name;
-      border-bottom: 1px solid #E1FD2C;      
-    }
-
-    &_email {
-      grid-area: email;
-    }        
   }
 
   &__submit {
@@ -826,6 +834,11 @@
     line-height: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.6;
+    }    
   }
 
   &__info {

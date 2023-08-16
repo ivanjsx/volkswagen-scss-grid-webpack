@@ -1,0 +1,18 @@
+.footer__subscription {
+  grid-area: subscription;
+  padding: 50px;
+  box-sizing: border-box;
+  border-right: 1px solid #E1FD2C;
+}
+@media (max-width: 1000px) {
+    .footer__subscription {
+        border: none;
+        padding-right: 0;
+      }
+}
+@media (max-width: 520px) {
+    .footer__subscription {
+        border: none;
+        padding: 20px;
+      }
+}

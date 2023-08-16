@@ -7,8 +7,8 @@ export default class Gallery {
         }
     ) {
         this._picture = document.querySelector(pictureSelector);
-        this._showNextButton = document.querySelector(`${switcherButtonClass}_next`);
-        this._showPreviousButton = document.querySelector(`${switcherButtonClass}_previous`);
+        this._showNextButton = document.querySelector(`${switcherButtonClass}_direction_next`);
+        this._showPreviousButton = document.querySelector(`${switcherButtonClass}_direction_previous`);
         this._pictureSourcesList = pictureSourcesList;
     };
 

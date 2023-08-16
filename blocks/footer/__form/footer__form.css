@@ -1,0 +1,15 @@
+.footer__form {
+  margin-top: 64px;
+  max-width: 340px;
+  box-sizing: border-box;
+  border: 1px solid #E1FD2C;
+  display: grid;
+  --width: calc(50%-80px);
+  grid-template-columns: 50% var(--width) 80px;
+  grid-template-areas: "first-name last-name last-name" "email email submit";
+}
+@media (max-width: 520px) {
+    .footer__form {
+        margin-top: 60px;
+      }
+}

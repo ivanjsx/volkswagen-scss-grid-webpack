@@ -1,4 +1,4 @@
-import './index.scss';
+import './index.css';
 
 
 
@@ -7,12 +7,14 @@ import './index.scss';
 import Header from './components/Header';
 
 const headerSettings = {
-    headerSwitcherClass: "header__switcher-button",
-    headerLogoAreaSelector: ".header__logo-area",
-    headerNavigationSelector: ".header__nav"
+    navigationClass: "header__nav",
+    logoAreaClass: "header__logo-area",
+    switcherAreaClass: "header__switcher-area",
+    switcherButtonClass: "header__switcher-button"
 }
 
 const header = new Header(headerSettings);
+header.setState();
 header.setEventListeners();
 
 
