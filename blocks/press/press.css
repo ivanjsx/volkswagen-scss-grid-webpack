@@ -1,0 +1,23 @@
+.press {
+  width: 100%;
+  min-height: 500px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-top: 1px solid #E1FD2C;
+  border-bottom: 1px solid #E1FD2C;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "section-title-area article-area";
+}
+@media (max-width: 1000px) {
+    .press {
+        grid-template-columns: auto;
+        grid-template-areas: "article-area";
+      }
+}
+@media (max-width: 520px) {
+    .press {
+        min-height: 287px;
+      }
+}

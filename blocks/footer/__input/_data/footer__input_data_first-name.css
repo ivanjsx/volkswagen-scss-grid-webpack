@@ -1,0 +1,5 @@
+.footer__input_data_first-name {
+  grid-area: first-name;
+  border-right: 1px solid #E1FD2C;
+  border-bottom: 1px solid #E1FD2C;
+}

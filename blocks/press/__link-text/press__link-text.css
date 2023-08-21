@@ -1,0 +1,12 @@
+.press__link-text {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+@media (max-width: 520px) {
+    .press__link-text {
+        font-size: 14px;
+      }
+}

@@ -1,0 +1,12 @@
+.page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: #E1FD2C;
+  background-color: #191D2C;
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+}

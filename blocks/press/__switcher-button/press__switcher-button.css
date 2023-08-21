@@ -1,0 +1,13 @@
+.press__switcher-button {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  background-color: inherit;
+  box-sizing: border-box;
+  border: 1px solid #E1FD2C;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+.press__switcher-button:hover {
+  background-color: #E1FD2C;
+}

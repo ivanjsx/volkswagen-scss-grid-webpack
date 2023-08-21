@@ -1,0 +1,13 @@
+.lead__text_belonging_intro {
+  padding: 30px 0;
+}
+@media (max-width: 1000px) {
+    .lead__text_belonging_intro {
+        padding-top: 0;
+      }
+}
+@media (max-width: 520px) {
+    .lead__text_belonging_intro {
+        padding-bottom: 25px;
+      }
+}

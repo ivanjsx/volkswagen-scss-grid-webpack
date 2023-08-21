@@ -1,0 +1,23 @@
+.facts__pros {
+  grid-area: pros;
+  padding: 40px 50px 45px 50px;
+  box-sizing: border-box;
+  border-left: 1px solid #E1FD2C;
+  border-right: 1px solid #E1FD2C;
+}
+@media (max-width: 1000px) {
+    .facts__pros {
+        border-left: none;
+      }
+}
+@media (max-width: 520px) {
+    .facts__pros {
+        padding: 20px;
+        border-right: none;
+      }
+}
+@media (max-width: 400px) {
+    .facts__pros {
+        border-bottom: 1px solid #E1FD2C;
+      }
+}

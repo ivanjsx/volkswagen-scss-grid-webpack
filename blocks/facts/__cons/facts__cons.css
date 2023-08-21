@@ -1,0 +1,9 @@
+.facts__cons {
+  grid-area: cons;
+  padding: 40px 50px 45px 50px;
+}
+@media (max-width: 520px) {
+    .facts__cons {
+        padding: 20px;
+      }
+}

@@ -1,0 +1,21 @@
+.gallery__switcher-button {
+  width: 42px;
+  height: 34px;
+  border: none;
+  cursor: pointer;
+  background-size: contain;
+  background-color: inherit;
+  background-image: url(../../../images/arrow_left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s;
+}
+@media (max-width: 520px) {
+    .gallery__switcher-button {
+        width: 24px;
+        height: 20px;
+      }
+}
+.gallery__switcher-button:hover {
+  opacity: 0.6;
+}

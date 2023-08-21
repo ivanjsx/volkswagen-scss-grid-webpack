@@ -1,0 +1,15 @@
+.facts__summary {
+  grid-area: summary;
+  padding: 40px 100px 45px 50px;
+}
+@media (max-width: 1000px) {
+    .facts__summary {
+        padding-right: 50px;
+        border-bottom: 1px solid #E1FD2C;
+      }
+}
+@media (max-width: 520px) {
+    .facts__summary {
+        padding: 20px;
+      }
+}

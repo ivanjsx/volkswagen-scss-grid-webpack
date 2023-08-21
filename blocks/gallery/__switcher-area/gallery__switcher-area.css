@@ -1,0 +1,9 @@
+.gallery__switcher-area {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 520px) {
+    .gallery__switcher-area {
+        gap: 16px;
+      }
+}

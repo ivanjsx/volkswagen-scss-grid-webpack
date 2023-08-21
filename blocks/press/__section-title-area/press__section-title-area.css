@@ -1,0 +1,11 @@
+.press__section-title-area {
+  grid-area: section-title-area;
+  padding: 50px;
+  box-sizing: border-box;
+  border-right: 1px solid #E1FD2C;
+}
+@media (max-width: 1000px) {
+    .press__section-title-area {
+        display: none;
+      }
+}

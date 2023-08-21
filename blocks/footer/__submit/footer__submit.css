@@ -1,0 +1,18 @@
+.footer__submit {
+  padding: 0;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #E1FD2C;
+  cursor: pointer;
+  color: #191D2C;
+  background-color: #E1FD2C;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+}
+.footer__submit:hover {
+  opacity: 0.6;
+}
