@@ -357,11 +357,11 @@
   }
 }
 .facts__summary-text {
+  font-weight: 300;
   margin: 0;
   padding: 0;
   font-size: 30px;
   line-height: 42px;
-  font-weight: 300;
 }
 @media (max-width: 520px) {
   .facts__summary-text {
@@ -370,11 +370,11 @@
   }
 }
 .facts__summary-text-bold {
+  font-weight: 400;
   margin: 0;
   padding: 0;
   font-size: 30px;
   line-height: 42px;
-  font-weight: 400;
 }
 @media (max-width: 520px) {
   .facts__summary-text-bold {

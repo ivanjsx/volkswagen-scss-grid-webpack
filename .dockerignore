@@ -4,6 +4,10 @@ build/
 # dependencies
 node_modules/
 
+# version history
+.git
+.gitignore
+
 # miscellanea
 .DS_Store
 .vscode
