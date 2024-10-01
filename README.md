@@ -1,39 +1,32 @@
-# Study Project on Landings
+# Volkswagen T1 Electro
 
-An article in an auto magazine on the newly introduced **Volkswagen T1 Electro**
+## Project Description
 
-### Description
+This project showcases an article page dedicated to the **Volkswagen T1 Electro**, designed to function as either an article for an automotive magazine or a landing page for the car manufacturer’s website. The page is fully responsive across various screen sizes, ensuring a seamless user experience.
 
-Responsive layout with interactive elements.
+The development of the page follows **Object-Oriented Programming (OOP) principles** and the **BEM methodology**, ensuring that the code is highly maintainable and scalable for future server-side integration. The project utilizes a custom build process with **Webpack** and **Babel**, and the CSS is further optimized with **PostCSS** for performance improvements.
 
-Created using OOP principles, making it easy to add server-side functionality later on.
+## See It In Action
 
-### Inputs
+The page is optimized for **desktop, tablet, and mobile devices** and can be viewed live at [vw-t1e.ivanjsx.com](https://vw-t1e.ivanjsx.com).
 
-The input data for the page is a design project in [**Figma**](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?type=design&node-id=2-1369&mode=dev).
+## My Role In It
 
-### Output
+I was responsible for the entire development process, starting from the initial [Figma design](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link) to the final deployment. This included setting up the project architecture, implementing the responsive layout, and optimizing the build process. 
 
-How to set up a project on your local computer via Terminal window:
+I ensured the codebase adheres to **OOP principles** and **BEM methodology**, making the project easily extensible and ready for future enhancements.
 
-0. Make sure you already have `git` and `npm` set up
-1. Clone the repository with `git clone https://github.com/dinosaurivan/vw_t1_electro.git` command
-2. Navigate to the newly created project folder with `cd vw_t1_electro` command
-3. Install packages indicated in the dependencies list using `npm install` command
-8. Run your own local web server by executing `npm run dev` command
-9. **Profit!** Manually type `localhost:8080` in your browser of choice to see the page.
+## Technologies Used
 
-### Technologies
-
-- HTML5
-- CSS3 & [SCSS](https://sass-lang.com)
-- JavaScript
-- Webpack, Babel, PostCSS
-- BEM methodology
-- Flexbox, Grid Layout, media-queries, Object-Oriented Programming
-
-### Author
-
-Ivan Shanin
-
-You can always contant me via Telegram @ https://t.me/justicewisdom/
+- **HTML5** for structuring the page content
+- **SCSS** (a subset of [SASS](https://sass-lang.com)) for styling
+- **JavaScript** for adding interactivity
+- **Webpack** for asset bundling and managing the build process
+- **Babel** for JavaScript transpilation, ensuring cross-browser compatibility
+- **BEM methodology** for clean and maintainable CSS architecture
+- **PostCSS** for optimizing CSS (including **cssnano** for minification and **autoprefixer** for vendor prefixing)
+- **Flexbox, Grid Layout, and media queries** for responsive design across devices
+- **Object-Oriented Programming** for structuring the JavaScript code
+- **Docker** for containerizing the project
+- **Nginx** for serving the project in a production environment
+- **Let's Encrypt** for SSL certificate generation
