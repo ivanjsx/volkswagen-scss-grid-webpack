@@ -13,12 +13,13 @@
   "keywords": [],
   "author": "Ivan Shanin",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.3",
     "clean-webpack-plugin": "^4.0.0",
+    "core-js": "^3.32.0",
     "css-loader": "^6.8.1",
     "css-to-bem-file-structure": "^0.0.5",
     "cssnano": "^6.0.1",
@@ -32,8 +33,5 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  },
-  "dependencies": {
-    "core-js": "^3.32.0"
   }
 }
