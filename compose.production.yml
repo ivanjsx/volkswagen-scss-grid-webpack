@@ -1,0 +1,17 @@
+name: vw-t1-electro
+
+networks:
+  default:
+    name: vw-t1e-default
+
+services:
+  vw-t1-electro:
+    image: ivanjsx/vw-t1-electro:latest
+    container_name: vw-t1-electro
+    platform: "linux/amd64"
+    restart: always
+    ports:
+      - name: web
+        host_ip: 127.0.0.1
+        published: "8004"
+        target: 80
