@@ -1,4 +1,16 @@
+// load styles
 import './index.css';
+
+
+
+// add website icon
+
+import Icon from './components/Icon';
+
+import source from '../images/icon.png';
+
+const icon = new Icon();
+icon.setSource(source);
 
 
 
