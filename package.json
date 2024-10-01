@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-css": "sass styles/index.scss styles/index.css && rm styles/index.css.map",
+    "compile-scss": "sass styles/index.scss styles/index.css && rm styles/index.css.map",
     "bemify-css": "node_modules/.bin/bemify styles/index.css",
-    "styles": "npm run compile-css && npm run bemify-css",
+    "make-styles": "npm run compile-scss && npm run bemify-css",
     "dev": "webpack serve",
     "build": "webpack --mode production"
   },

@@ -1,4 +1,9 @@
+# compiled output
+build/
+
+# dependencies
+node_modules/
+
+# miscellanea
 .DS_Store
-node_modules
-dist
-dev
+.vscode
